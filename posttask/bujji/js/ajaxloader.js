@@ -2,7 +2,7 @@ function savecomment() {
     var comment = $('#inputpost').val();
     //alert(comment);
     document.getElementById('resultdiv').innerHTML = "Loading Please wait...!";
-    url = "../bujjiservice/index.php?action=savecomment";
+    url = "bujjiservice/index.php?action=savecomment";
     $.ajax({
         type: "POST",
         url: url,
@@ -28,7 +28,7 @@ function deletecomment(cid) {
     var con = confirm("Do you really want to delete comment");
     if (con) {
         document.getElementById('resultdiv').innerHTML = "Redirecting Please wait...!";
-        url = "../bujjiservice/index.php?action=deletecomment";
+        url = "bujjiservice/index.php?action=deletecomment";
         $.ajax({
             type: "POST",
             url: url,
@@ -61,7 +61,7 @@ function showcomment() {
     document.getElementById('postdiv').innerHTML = "";
     showpost();
     document.getElementById('resultdiv').innerHTML = "Loading Please wait...!";
-    url = "../bujjiservice/index.php?action=getcomment";
+    url = "bujjiservice/index.php?action=getcomment";
     $.ajax({
         type: "GET",
         url: url,
@@ -90,7 +90,7 @@ function showcomment() {
 function showpost() {
 
     document.getElementById('resultdiv').innerHTML = "Loading Please wait...!";
-    url = "../bujjiservice/index.php?action=getpost";
+    url = "bujjiservice/index.php?action=getpost";
     $.ajax({
         type: "GET",
         url: url,
@@ -122,7 +122,7 @@ function editpost() {
         var comment = $('#inputpost').val();
         //alert(comment);
         document.getElementById('resultdiv').innerHTML = "Loading Please wait...!";
-        url = "../bujjiservice/index.php?action=updatepost";
+        url = "bujjiservice/index.php?action=updatepost";
         $.ajax({
             type: "POST",
             url: url,
