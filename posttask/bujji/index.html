@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Bujji</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body onLoad="showcomment()" >
+<div class="container">
+<div class="row">
+<div id="resultdiv" class="pagination-centered"></div>
+</div>
+<h1><small>Post :</small></h1>
+<div id="postdiv"> </div>
+<h1><small>Comments :</small></h1>
+<div id="content"></div>
+<div>
+  <table>
+    <tr>
+      <td><h2><small>Enter Comment </small></h2></td>
+      <td><input type="text" id="inputpost"></td>
+      <td><input class="btn btn-primary " type="button" id="savepost" onclick="savecomment()" value=" save"></td>
+    </tr>
+  </table>
+</div></div>
+<script src="js/jquery.js" type="text/javascript" ></script> 
+<script src="js/ajaxloader.js" type="text/javascript" ></script>
+</body>
+</html>
